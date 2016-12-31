@@ -3,10 +3,7 @@ def happy(number):
         string = str(number)
 
         digits = [int (char) for char in string]
-
-        total = 0
-        for digit in digits:
-            total += digit
+        total = sum(digits)
 
         return total == 1
 
