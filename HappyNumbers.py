@@ -2,11 +2,13 @@ def happy(number):
     if number in (1, 10, 100):
         string = str(number)
 
+        digits = []
+        for char in string:
+            digits.append(int(char))
 
         total = 0
-        for char in string:
-            total += int(char)
-
+        for digit in digits:
+            total += digit
 
         return total == 1
 
