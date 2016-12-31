@@ -3,5 +3,6 @@ def happy(number):
         return False
     return True
 
-assert happy(1) == True
-assert happy(4) == False
+assert happy(1)
+assert happy(10)
+assert not happy(4)
